@@ -1,0 +1,48 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  background-color: black;
+}
+
+.endgame{
+  width: 100%;
+  min-height: 100vh;
+}
+
+.video{
+  position:relative;
+  width:100%;
+  height:100vh;
+}
+
+#player,
+#sec-player{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
+
+#sec-player{
+  display:none;
+}
+
+.back{
+  position: fixed;
+  left: 20px;
+  bottom: 50px;
+  color: white;
+  text-decoration: none;
+}
+
+#dust{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  display:none;
+}
