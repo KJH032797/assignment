@@ -3,7 +3,7 @@ let SecPlayer=document.querySelector('#sec-player');
 let canvas=document.querySelector('#dust');
 let ctx=canvas.getContext('2d');
 
-player.src="../resources/videos/fingerSnap.mp4";
+player.src="./resources/videos/fingerSnap.mp4";
 player.currentTime=0;
 
 player.addEventListener('loadedmetadata',function(){
@@ -16,7 +16,7 @@ player.addEventListener('timeupdate',function(){
     player.pause();
     player.style.display='none';
 
-    SecPlayer.src="../resources/videos/encore.mp4";
+    SecPlayer.src="./resources/videos/encore.mp4";
     SecPlayer.currentTime=81;
     SecPlayer.style.display='block';
     SecPlayer.play();
